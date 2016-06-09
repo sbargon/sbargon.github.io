@@ -6,9 +6,9 @@ title: Stu Posts
 	<ul class="posts">
 
 	  {% for post in site.posts %}
-	    <div class="mdl-card">
+	    <div class="mdl-card mdl-shadow--4dp">
 	    	<div class="mdl-card__title">
-	    	  {{ post.title }}<span>{{ post.date | date_to_string }}</span>
+	    	  <h2 class="mdl-card__title-text">{{ post.title }}</h2><span>{{ post.date | date_to_string }}</span>
 	    	</div>
 	    	<div class="mdl-card__supporting-text">
 	    	  {{ post.content }}

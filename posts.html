@@ -6,6 +6,13 @@ title: Stu Posts
 	<ul class="posts">
 
 	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>{{ post.content }}</li>
+	    <div class="mdl-card">
+	    	<div class="mdl-card__title">
+	    	  {{ post.title }}<span>{{ post.date | date_to_string }}</span>
+	    	</div>
+	    	<div class="mdl-card__supporting-text">
+	    	  {{ post.content }}
+	    	</div>
+	    </div>
 	  {% endfor %}
 	</ul>
